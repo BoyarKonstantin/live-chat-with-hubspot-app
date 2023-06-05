@@ -5,7 +5,7 @@ from requests.auth import HTTPBasicAuth
 import re
 from LiveChatApi import LiveChatApi
 
-bot = telebot.TeleBot('6075598101:AAHKui1LDUrnWzGN8ytIvSpsxOlh0Bd21N4')
+bot = telebot.TeleBot('token')
 
 email = ''
 name = ''
@@ -41,9 +41,9 @@ def is_valid_email(email):
 
 if __name__ == "__main__":
 
-    account_id = "d72aabe6-77b9-439d-b789-4cb04ccd6593"
+    account_id = "token"
 
-    live_chat_token = "dal:3kfmrh8Drk814qWH-AqA3RCwxS0"
+    live_chat_token = 'token'
     live_chat_api = LiveChatApi(token=live_chat_token)
 
     customer_id = live_chat_api.post_customer(live_chat_token,
